@@ -47,6 +47,7 @@ class _WeatherHomeState extends State<WeatherHome> {
             Text(_weather?.cityName ?? "Loading city..."),
             Lottie.asset('assets/rainny.json'),
             Text('${_weather?.temp.round()}°C'),
+            Text(_weather?.mainCondition ?? ""),
           ],
         ),
       ),
